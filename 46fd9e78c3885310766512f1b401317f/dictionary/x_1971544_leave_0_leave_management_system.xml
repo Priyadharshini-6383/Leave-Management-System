@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="enforce_dot_walk_cross_scope_access=true" db_object_id="7ebf167cc3885310766512f1b4013128" extends="task" label="Leave Management System" max_length="40" name="x_1971544_leave_0_leave_management_system" type="collection">
+        <element label="Reason" max_length="40" name="reason" type="string"/>
+        <element label="Employee" max_length="32" name="employee" reference="sys_user" type="reference"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="3" label="Leave Type" max_length="40" name="leave_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Casual" sequence="1" value="casual"/>
+                <element inactive_on_update="false" label="Personal" sequence="0" value="personal"/>
+                <element inactive_on_update="false" label="Sick" sequence="2" value="sick"/>
+            </choice>
+        </element>
+    </element>
+</database>
